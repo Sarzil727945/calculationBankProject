@@ -8,6 +8,10 @@ document.getElementById('btn-withdraw').addEventListener('click', function(){
           alert('Please give your input number!!');
           return;
      }
+     if(Number(inputWithdrawValue)<=0){
+          alert('your value is invalid!!')
+          return;
+     }
 
      //  Withdraw total push
       const withdrawTotal = document.getElementById('withdraw-total');

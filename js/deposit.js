@@ -8,7 +8,10 @@ document.getElementById('btn-deposit').addEventListener('click', function(){
           alert('Please give your input number!!');
           return;
      }
-
+     if(Number(newDepositText)<=0){
+          alert('your value is invalid!!')
+          return;
+     }
      // deposit total push
      const depositTotal = document.getElementById('deposit-total');
      const depositTotalText = depositTotal.innerText;
