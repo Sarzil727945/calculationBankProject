@@ -8,8 +8,12 @@ document.getElementById('btn-withdraw').addEventListener('click', function(){
           alert('Please give your input number!!');
           return;
      }
-     if(Number(inputWithdrawValue)<=0){
-          alert('your value is invalid!!')
+     if(Number(inputWithdrawValue)<0){
+          alert('Your value is invalid!!')
+          return;
+     }
+     if(Number(inputWithdrawValue)==0){
+          alert('Your value is null!!')
           return;
      }
 
